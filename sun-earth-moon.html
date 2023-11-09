@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background: black;
+            }
+            .container{
+                height: 400px;
+                width: 400px;
+                position: relative;
+            }
+            .sun{
+                width: 100px;
+                height: 100px;
+                background: yellow;
+                border-radius: 50%;
+                box-shadow: 0 0 30px white;
+                position: absolute;
+                top: 150px;
+                left: 150px;
+            }
+            .globe.earth{
+                background: aqua;
+                height: 30px;
+                width: 30px;
+                right: 28px;
+                top: 28px;
+            }
+            .globe.moon{
+                background: #d6d6d6;
+                height: 12px;
+                width: 12px;
+                right: 2px;
+                top: 8px;
+
+            }
+            .globe{
+                border-radius: 50%;
+                position: absolute;
+
+            }
+            .orbit.earth{
+                position: relative;
+                animation: orbit 36.5s linear infinite;
+                height: 300px;
+                width: 300px;
+                left: 50px;
+                top: 50px;
+            }
+            .orbit.moon{
+                position: relative;
+                animation: orbit 2.7s linear infinite;
+                height: 80px;
+                width: 80px;
+                left: -25px;
+                top: -25px;
+            }
+            .orbit{
+                position: relative;
+                border: solid;
+                border-color: white transparent transparent transparent;
+                border-radius: 50%;
+                border-width: 1px 1px 0 0;
+                box-sizing: border-box;
+                transform: rotate(0deg);
+                transform-origin: center;
+            }
+            @keyframes orbit{
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sun">
+
+            </div>
+            <div class="orbit earth">
+                <div class="globe earth">
+                    <div class="orbit moon">
+                        <div class="globe moon">
+
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
